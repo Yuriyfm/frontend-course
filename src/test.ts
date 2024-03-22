@@ -1,3 +1,3 @@
-export function func() {
-    console.log('It"s work!')
+export function func () {
+  console.log('It"s work!')
 }

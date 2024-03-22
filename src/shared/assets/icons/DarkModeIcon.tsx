@@ -1,5 +1,5 @@
-import DarkModeIcon from '@mui/icons-material/DarkMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode'
 
 export {
-    DarkModeIcon
+  DarkModeIcon
 }
