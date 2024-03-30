@@ -17,6 +17,6 @@ export function buildPlugins({paths, isDev}: BuildsOptions): webpack.WebpackPlug
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev)
         }),
-        isDev && new ReactRefreshPlugin()
+        new ReactRefreshPlugin()
     ]
 }

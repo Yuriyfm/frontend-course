@@ -6,12 +6,15 @@ import { ThemeProvider } from 'app/providers/ThemeProvider'
 
 import 'shared/config/i18n/i18n'
 
-ReactDOM.createRoot(
-  document.getElementById('root')
-).render(
-  <BrowserRouter>
-    <ThemeProvider>
-      <App/>
-    </ThemeProvider>
-  </BrowserRouter>
-)
+const rootElement = document.getElementById('root')
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <BrowserRouter>
+      <ThemeProvider>
+        <App/>
+      </ThemeProvider>
+    </BrowserRouter>
+  )
+} else {
+  console.error('Failed to find the root element')
+}
